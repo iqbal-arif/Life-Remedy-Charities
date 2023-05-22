@@ -38,9 +38,9 @@ function touchStart(index) {
     currentIndex = index;
     // To check the cursor position in browser with mouse or touch on device.
     // console.log(event.type.includes('mouse'));
-    startPos = event.type.includes('mouse')
-      ? event.pageX
-      : event.touches[0].clientX;
+    // getPositionX(e) gives the touch Start Position of the cursor
+    startPos = getPositionX(event);
+    event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
     console.log(startPos);
     isDragging = true;
   };
@@ -56,3 +56,10 @@ function touchMove() {
     console.log('move');
   }
 }
+
+// function getPositionX(e) {
+//   return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+// }
+getPositionX = (e) => {
+  return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+};
