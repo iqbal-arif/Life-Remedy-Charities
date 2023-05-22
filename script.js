@@ -36,7 +36,12 @@ function touchStart(index) {
   return function (event) {
     // console.log('start');
     currentIndex = index;
-    console.log(event.type.includes('mouse'));
+    // To check the cursor position in browser with mouse or touch on device.
+    // console.log(event.type.includes('mouse'));
+    startPos = event.type.includes('mouse')
+      ? event.pageX
+      : event.touches[0].clientX;
+    console.log(startPos);
     isDragging = true;
   };
 }
