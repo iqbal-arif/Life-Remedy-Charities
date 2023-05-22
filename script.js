@@ -35,6 +35,8 @@ window.oncontextmenu = (e) => {
 function touchStart(index) {
   return function (event) {
     // console.log('start');
+    currentIndex = index;
+    console.log(event.type.includes('mouse'));
     isDragging = true;
   };
 }
