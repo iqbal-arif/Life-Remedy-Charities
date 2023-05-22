@@ -26,14 +26,18 @@ slides.forEach((slide, index) => {
 
 function touchStart(index) {
   return function (event) {
-    console.log('start');
+    // console.log('start');
+    isDragging = true;
   };
 }
 
 function touchEnd() {
-  console.log('end');
+  //   console.log('end');
+  isDragging = false;
 }
 
 function touchMove() {
-  console.log('move');
+  if (isDragging) {
+    console.log('move');
+  }
 }
