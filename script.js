@@ -1,5 +1,5 @@
 const slider = document.querySelector('.slider-container'),
-  slide = Array.from(document.querySelectorAll('.slide'));
+  slides = Array.from(document.querySelectorAll('.slide'));
 
 let isDragging = false,
   startPos = 0,
@@ -7,3 +7,8 @@ let isDragging = false,
   prevTranslate = 0,
   animationID = 0,
   currentIndex = 0;
+
+slides.forEach((slide, index) => {
+  const slideImage = slide.querySelector('img');
+  slideImage.addEventListener('dragstart', (e) => e.preventDefault());
+});
