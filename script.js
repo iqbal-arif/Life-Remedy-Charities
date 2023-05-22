@@ -24,6 +24,14 @@ slides.forEach((slide, index) => {
   slide.addEventListener('mousemove', touchMove);
 });
 
+// Preventing Contextual Menu on Right-click
+
+window.oncontextmenu = (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  return false;
+};
+
 function touchStart(index) {
   return function (event) {
     // console.log('start');
