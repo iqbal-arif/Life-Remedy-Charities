@@ -43,6 +43,9 @@ function touchStart(index) {
     event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
     console.log(startPos);
     isDragging = true;
+
+    // https://css-trick.com/using-requestanimationframe/ has best browser performance; can use animation intervals instead
+    animationID = requestAnimationFrame(animation);
   };
 }
 
@@ -62,4 +65,10 @@ function touchMove() {
 // }
 getPositionX = (e) => {
   return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+};
+
+// Function Animation
+const animation = () => {
+  if (isDragging) {
+  }
 };
