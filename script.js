@@ -54,9 +54,11 @@ function touchEnd() {
   isDragging = false;
 }
 
-function touchMove() {
+function touchMove(event) {
   if (isDragging) {
-    console.log('move');
+    // console.log('move');
+    const currentPosition = getPositionX(event);
+    currentTranslate = prevTranslate + currentPosition - startPos;
   }
 }
 
@@ -69,6 +71,12 @@ getPositionX = (e) => {
 
 // Function Animation
 const animation = () => {
+  setSliderPosition();
   if (isDragging) {
+    requestAnimationFrame(animation);
   }
+};
+
+const setSliderPosition = () => {
+  slider.style.transform = `translateX(${currentTranslate}px)`;
 };
