@@ -40,18 +40,31 @@ function touchStart(index) {
     // console.log(event.type.includes('mouse'));
     // getPositionX(e) gives the touch Start Position of the cursor
     startPos = getPositionX(event);
-    event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+    // event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
     console.log(startPos);
     isDragging = true;
 
     // https://css-trick.com/using-requestanimationframe/ has best browser performance; can use animation intervals instead
     animationID = requestAnimationFrame(animation);
+    // Adding Grabbing functionality
+    slider.classList.add('grabbing');
   };
 }
 
 function touchEnd() {
   //   console.log('end');
   isDragging = false;
+  cancelAnimationFrame(animationID);
+  //  Slide snapping functionality
+  const movedBy = currentTranslate - prevTranslate;
+  // Slide to Right-side check
+  if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex += 1;
+  // Slide to Left-side check
+  if (movedBy > 100 && currentIndex > 0) currentIndex -= 1;
+  // Removing Grabbing functionality
+  slider.classList.remove('grabbing');
+
+  setPositionByIndex();
 }
 
 function touchMove(event) {
@@ -62,9 +75,6 @@ function touchMove(event) {
   }
 }
 
-// function getPositionX(e) {
-//   return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
-// }
 getPositionX = (e) => {
   return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
 };
@@ -72,11 +82,15 @@ getPositionX = (e) => {
 // Function Animation
 const animation = () => {
   setSliderPosition();
-  if (isDragging) {
-    requestAnimationFrame(animation);
-  }
+  if (isDragging) requestAnimationFrame(animation);
 };
 
 const setSliderPosition = () => {
   slider.style.transform = `translateX(${currentTranslate}px)`;
+};
+
+const setPositionByIndex = () => {
+  currentTranslate = currentIndex * -window.innerWidth;
+  prevTranslate = currentTranslate;
+  setSliderPosition();
 };
