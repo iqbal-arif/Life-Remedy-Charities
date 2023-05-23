@@ -17,6 +17,14 @@ body {
   line-height: 1.7;
 }
 
+.header {
+  height: 7em;
+  background: url('../img/logo/hlogo.svg') no-repeat;
+  background-size: 15em;
+  background-color: #333;
+  background-position: center;
+}
+
 .nav-bar {
   display: flex;
   justify-content: center;
