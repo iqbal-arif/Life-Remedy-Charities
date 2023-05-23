@@ -23,11 +23,30 @@ body {
   align-items: center; /*vertical alignment */
   justify-content: space-around; /*horizontal alignment*/
   /* position: sticky; */
-  height: 5em;
+  height: 3.5em;
   color: aliceblue;
   font-size: 1.5rem;
   flex-direction: row;
   background: rgba(51, 51, 51, 0.85);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-bar a {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.nav-bar a:hover {
+  border-bottom: 0.15em solid #77c55f;
+  color: #77c55f;
 }
 
 .slider-container {
