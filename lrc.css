@@ -9,10 +9,13 @@
 html,
 body {
   font-family: 'Open Sans', sans-serif;
+  /*
   height: 100%;
   width: 100%;
+  */
   height: 90vh;
-  width: 100%;
+  /* width: 100%; */
+  width: 100vw;
   overflow: hidden;
   background-color: #333;
   color: #fff;
@@ -146,12 +149,13 @@ a:active {
   /* margin-top: 1rem; */
   transition: transform 0.3s ease-in-out;
 }
-
-.image {
+/*
+.img {
   max-width: 100vw;
   max-height: 100vh;
-  object-fit: cover;
+  object-fit: fill;
 }
+*/
 /* .img1 {
   background-image: url('./images/jeremy-bishop-1920x2880.jpg');
 }
