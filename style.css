@@ -106,18 +106,17 @@ a:active {
 }
 
 .img {
-  /* background-image: url('./images/jeremy-bishop-1920x2880.jpg'); */
-  max-width: 100%;
-  max-height: 50vh;
+  max-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* max-width: 100%;
+  max-height: 50vh; */
   margin-top: 1rem;
   transition: transform 0.3s ease-in-out;
 }
-/* .img1 {
-  background-image: url('./images/jeremy-bishop-1920x2880.jpg');
-}
-.img2 {
-  background-image: url('./images/jeremy-bishop-1920x2880.jpg');
-} */
 
 .slide h2 {
   font-size: 2.5rem;
