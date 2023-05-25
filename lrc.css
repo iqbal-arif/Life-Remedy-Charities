@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   height: 6em;
   /* background: url('./images/LRC-LOG.svg') no-repeat; */
@@ -32,6 +32,7 @@ body {
   background-size: 12em;
   background-position: center;
 }
+
 .nav-bar {
   display: flex;
   justify-content: center;
