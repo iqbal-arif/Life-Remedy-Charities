@@ -1,5 +1,5 @@
 const slider = document.querySelector('.slider-container'),
-  slides = Array.from(document.querySelectorAll('.slide'));
+  slides = Array.from(document.querySelectorAll('img'));
 //   slides = Array.from(document.querySelectorAll('.slider-img'));
 
 let isDragging = false,
@@ -11,8 +11,8 @@ let isDragging = false,
 
 slides.forEach((slide, index) => {
   //   const slideImage = slide.querySelector('img');
-  const slideImage = slide.querySelector('img');
-  slideImage.addEventListener('dragstart', (e) => e.preventDefault());
+  //   slideImage.addEventListener('dragstart', (e) => e.preventDefault());
+  slide.addEventListener('dragstart', (e) => e.preventDefault());
 
   //   Touch Events
   slide.addEventListener('touchstart', touchStart(index));
