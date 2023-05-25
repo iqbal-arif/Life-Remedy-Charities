@@ -9,10 +9,7 @@
 html,
 body {
   font-family: 'Open Sans', sans-serif;
-  /*
-  height: 100%;
-  width: 100%;
-  */
+
   height: 90vh;
   /* width: 100%; */
   width: 100vw;
@@ -48,21 +45,9 @@ body {
   /* margin-top: 12px; */
   margin-right: 20px;
   /* gap: 12px; */
-  align-items: center;
+  align-items: flex-end;
   /* align-content: space-around; */
   justify-content: flex-start;
-}
-.nav-bar {
-  display: flex;
-  justify-content: center;
-  align-items: center; /*vertical alignment */
-  justify-content: space-around; /*horizontal alignment*/
-  /* position: sticky; */
-  height: 2.5em;
-  color: aliceblue;
-  font-size: 1.5rem;
-  flex-direction: row;
-  background: rgba(51, 51, 51, 0.85);
 }
 
 a:link,
@@ -70,30 +55,18 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
-.nav-bar a {
-  font-family: 'Ubuntu', sans-serif;
+.navBar a {
+  font-family: 'Open Sans', 'Ubuntu', sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
   color: white;
 }
 
-.nav-bar a:hover {
+.navBar a:hover {
   border-bottom: 0.15em solid #77c55f;
   color: #77c55f;
-}
-
-/* Section Separation CSS for Header and Footer Overlay Container */
-#page-container {
-  position: relative;
-  /* min-height: 100vh; */
-  max-height: 100vh;
-  background: rgba(51, 51, 51, 0.7);
-}
-
-#content-wrap {
-  padding-bottom: 0.5rem; /* Footer height */
 }
 
 .slider-container {
@@ -112,8 +85,8 @@ a:active {
     #f7bb38,
     #f4bc2e,
     /* #fca311ff, )*/
-  height: 100vh;
-  display: inline-flex;
+  /* height: 100vh; */
+  /* display: inline-flex; */
   /* overflow: hidden; */
   transform: translate(0px);
   transition: transform 0.3s ease-out;
