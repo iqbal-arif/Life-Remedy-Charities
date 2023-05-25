@@ -21,7 +21,7 @@ body {
 
 .header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 6em;
   /* background: url('./images/LRC-LOG.svg') no-repeat; */
   /* background-color: #333; */
