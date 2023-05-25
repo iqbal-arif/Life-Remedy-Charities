@@ -18,6 +18,7 @@ body {
 }
 
 .header {
+  display: flex;
   height: 6em;
   background: url('./images/LRC-LOG.svg') no-repeat;
   background-size: 12em;
