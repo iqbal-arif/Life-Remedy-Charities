@@ -31,8 +31,8 @@ body {
 .log {
   /* background: url('./images/LRC-LOG.svg') no-repeat; */
   width: 15rem;
-  background-size: 12em;
-  background-position: center;
+  /* background-size: 15em; */
+  /* background-position: center; */
 }
 
 .navBar {
