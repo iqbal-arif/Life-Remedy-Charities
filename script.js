@@ -10,6 +10,7 @@ let isDragging = false,
   currentIndex = 0;
 
 slides.forEach((slide, index) => {
+  console.log(slide);
   //   const slideImage = slide.querySelector('img');
   //   slideImage.addEventListener('dragstart', (e) => e.preventDefault());
   slide.addEventListener('dragstart', (e) => e.preventDefault());
