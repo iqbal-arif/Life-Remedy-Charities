@@ -1,6 +1,6 @@
 const slider = document.querySelector('.slider-container'),
   // slides = Array.from(document.querySelectorAll('img'));
-  slides = Array.from(document.getElementsByClassName('.image'));
+  slides = Array.from(document.getElementsByClassName('image'));
 
 let isDragging = false,
   startPos = 0,
