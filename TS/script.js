@@ -29,11 +29,11 @@ slides.forEach((slide, index) => {
 
 // Preventing Contextual Menu on Right-click
 
-window.oncontextmenu = (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-  return false;
-};
+// window.oncontextmenu = (e) => {
+//   e.preventDefault();
+//   e.stopPropagation();
+//   return false;
+// };
 
 function touchStart(index) {
   return function (event) {
