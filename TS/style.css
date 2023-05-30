@@ -80,7 +80,7 @@ a:active {
     rgb(112, 112, 112) 73%,
     rgb(62, 62, 62) 96%
   );
-  height: 100vh;
+  height: 70vh;
   display: inline-flex;
   overflow: hidden;
   /* scrollbar-width: none; */
@@ -169,7 +169,7 @@ a[href^='tel'] {
 .item-contact .location-icon {
   width: 54px;
 }
-h1,
+h3,
 .location,
 .phone,
 .email,
@@ -191,14 +191,16 @@ h1,
 }
 
 .copyright {
-  background-color: rgba(37, 37, 37, 0.5);
-  height: 3.5rem;
+  height: 2.5rem;
   padding-top: 1rem;
 }
 
 .footer-container {
+  background-color: rgba(37, 37, 37, 0.5);
   display: flex;
   flex-direction: row;
+  text-align: center;
+  justify-content: center;
 }
 
 /* .item-contact {
