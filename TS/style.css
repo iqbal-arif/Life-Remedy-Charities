@@ -10,7 +10,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   height: 100%;
   width: 100%;
-  /* max-height: 70vh; */
+  max-height: 70vh;
   /* overflow: hidden; */
   background-color: #333;
   color: #fff;
@@ -97,7 +97,7 @@ a:active {
 }
 */
 .slide {
-  max-height: 70vh;
+  max-height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -109,16 +109,7 @@ a:active {
 
 .slide img {
   max-width: 100%;
-  max-height: 60%;
-}
-
-.slide h2 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.slide h3 {
-  font-size: 1rem;
+  max-height: 80%;
 }
 
 .btn {
@@ -126,6 +117,7 @@ a:active {
   color: #fff;
   text-decoration: none;
   padding: 1rem 1.5rem;
+  margin-top: 1rem;
 }
 
 .grabbing {
