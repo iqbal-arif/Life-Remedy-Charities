@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: row;
   height: 6em;
-  /* background: url('./images/LRC-LOG.svg') no-repeat; */
+  background: url('../images/LRC-LOG.svg') no-repeat;
   background-size: 12em;
   background-color: #333;
   background-position: center;
