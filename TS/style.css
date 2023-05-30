@@ -82,9 +82,9 @@ a:active {
   height: 100vh;
   display: inline-flex;
   overflow: hidden;
-  scrollbar-width: none;
+  /* scrollbar-width: none; */
   transform: translateX(0);
-  will-change: transform;
+  /* will-change: transform; */
   transition: transform 0.3s ease-out;
   cursor: grab;
 }
