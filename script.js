@@ -1,6 +1,10 @@
 const scrollContainer = document.querySelector('main');
 console.log(scrollContainer);
 
+const slider = document.querySelector('main'),
+  slides = Array.from(document.querySelectorAll('section'));
+console.log(slides);
+
 const endWidth = 25;
 scrollContainer.addEventListener('wheel', (evt) => {
   // console.log(evt.target.window);
@@ -12,6 +16,27 @@ scrollContainer.addEventListener('wheel', (evt) => {
   const totalWidth = (scrollContainer.scrollLeft / sectionWidth) * 100;
   console.log(totalWidth);
   document.getElementById('myBar').style.width = totalWidth + endWidth + '%';
+});
+
+function myFunction(event) {
+  var x = event.touches[0].clientX;
+  var y = event.touches[0].clientY;
+  document.getElementById('main').innerHTML = x + ', ' + y;
+}
+
+slides.forEach((slide, index) => {
+  console.log(slide, index);
+
+  //   Touch Events
+  // slide.addEventListener('touchstart', touchStart(index));
+  // slide.addEventListener('touchend', touchEnd);
+  // slide.addEventListener('touchmove', touchMove);
+
+  // Mouse.events
+  // slide.addEventListener('mousedown', touchStart(index));
+  // slide.addEventListener('mouseup', touchEnd);
+  // slide.addEventListener('mouseleave', touchEnd);
+  // slide.addEventListener('mousemove', touchMove);
 });
 
 /***********W3****************************************** 
