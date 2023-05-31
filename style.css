@@ -3,6 +3,10 @@ body {
   margin: 0;
   font-family: sans-serif;
   background-color: #e2d458;
+  /* Scroll Indicator */
+  --scrollbar-height: 5px;
+  --scrollbar-bg: #ddd;
+  --scrollbar-progress-color: #0089f2;
 }
 
 .header {
