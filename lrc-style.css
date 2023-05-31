@@ -100,7 +100,8 @@ a:active {
   transition: transform 0.3s ease-in-out;
 }
 */
-.slide {
+.slide,
+picture {
   /* background-image: url('./images/jeremy-bishop-1920x2880.jpg');
   transition: transform 0.3s ease-in-out; */
 
