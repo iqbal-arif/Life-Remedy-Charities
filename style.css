@@ -7,8 +7,12 @@ body {
   --scrollbar-height: 5px;
   --scrollbar-bg: #ddd;
   --scrollbar-progress-color: #0089f2;
+  overflow-x: hidden;
 }
 
+body {
+  position: relative;
+}
 /* The progress container (grey background) */
 .progress-container {
   width: 100%;
@@ -127,4 +131,16 @@ section:nth-child(even) {
 }
 iframe[sandbox] .read-article {
   display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px),
+  (orientation: portrait) {
+  main {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  section {
+    position: relative;
+    scroll-snap-align: start;
+  }
 }
