@@ -1,43 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+html,
 body {
-  font-family: 'Open Sans', sans-serif;
-  height: 100%;
-  width: 100%;
-  max-height: 70vh;
-  /* overflow: hidden; */
-  background-color: #333;
-  color: #fff;
-  /* line-height: 1.7; */
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #e2d458;
 }
 
 .header {
   display: flex;
   flex-direction: row;
-  height: 6em;
-  background: url('../images/LRC-LOG.svg') no-repeat;
-  background-size: 12em;
-  background-color: #333;
-  background-position: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  height: 6.8em;
+  /* background: url('./images/LRC-LOG.svg') no-repeat; */
+  /* background-color: #333; */
 }
 
-.nav-bar {
+.log {
+  background: url('./LRC-LOG.svg') no-repeat;
+  /* margin-top: 10px; */
+  align-items: center;
+  margin-left: 20px;
+  width: 15rem;
+  /* background-size: 15em; */
+  /* background-position: center; */
+}
+
+.navBar {
   display: flex;
-  justify-content: center;
-  align-items: center; /*vertical alignment */
-  justify-content: space-around; /*horizontal alignment*/
-  /* position: sticky; */
-  height: 2.5em;
-  color: aliceblue;
-  font-size: 1.5rem;
-  flex-direction: row;
-  background: rgba(51, 51, 51, 0.85);
+  flex-direction: column;
+  /* margin-top: 12px; */
+  margin-right: 20px;
+  /* gap: 12px; */
+  align-items: flex-end;
+  /* align-content: space-around; */
+  justify-content: flex-start;
 }
 
 a:link,
@@ -45,158 +41,69 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
-.nav-bar a {
-  font-family: 'Ubuntu', sans-serif;
+.navBar a {
+  font-family: 'Open Sans', 'Ubuntu', sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
   color: white;
 }
 
-.nav-bar a:hover {
+.navBar a:hover {
   border-bottom: 0.15em solid #77c55f;
   color: #77c55f;
 }
 
-/* Section Separation CSS for Header and Footer Overlay Container */
-/* #page-container {
+main {
   position: relative;
-  min-height: 100vh;
-  max-height: 100vh;
-  background: rgba(51, 51, 51, 0.7);
-}
-
-#content-wrap { */
-/* padding-bottom: 0.5rem; Footer height */
-/* } */
-
-.slider-container {
-  background-image: linear-gradient(
-    rgb(62, 62, 62) 10%,
-    rgb(112, 112, 112) 32%,
-    rgb(137, 137, 137) 52%,
-    rgb(112, 112, 112) 73%,
-    rgb(62, 62, 62) 96%
-  );
-  height: 70vh;
-  display: inline-flex;
-  overflow: hidden;
-  /* scrollbar-width: none; */
-  transform: translateX(0);
-  /* will-change: transform; */
-  transition: transform 0.3s ease-out;
-  cursor: grab;
-}
-/*
-.slider-img {
-  background-image: url('./images/jeremy-bishop-1920x2880.jpg');
-  text-align: center;
-  height: 80vh;
-  transition: transform 0.3s ease-in-out;
-}
-*/
-.slide {
-  max-height: 100vh;
-  width: 100vw;
+  overflow-x: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #d6d3b4;
+  /* Flex box position left to right */
+  /* justify-content: end; */
+
+  /* align-items: center; */
+  justify-items: last baseline;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  min-width: 100vw;
+  min-height: 85vh;
+  display: flex;
   justify-content: center;
-  padding: 0.5rem;
-  user-select: none;
+  align-items: center;
+  font-size: 4ch;
 }
 
-.slide img {
-  max-width: 100%;
-  max-height: 80%;
-}
-
-.btn {
-  background-color: #444;
-  color: #fff;
-  text-decoration: none;
-  padding: 1rem 1.5rem;
-  margin-top: 1rem;
-}
-
-.grabbing {
-  cursor: grabbing;
-}
-
-.grabbing .slide img {
-  transform: scale(0.85);
-}
-
-/* Footer */
-/*
-#main-footer {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-}
-
-#main-footer #icon {
-  color: black;
-}
-.phone,
-.email {
-  padding-top: 20px;
-  text-decoration: none;
-}
-
-a[href^='tel'] {
-  color: inherit;
-  text-decoration: none;
-}
-
-.item-contact a {
-  text-decoration: none;
-}
-
-.item-contact .location-icon {
-  width: 54px;
-}
-h3,
-.location,
-.phone,
-.email,
-.copyright {
+section:nth-child(even) {
+  background-color: teal;
   color: white;
 }
 
-.logo {
-  width: 100px;
-  margin-top: 0.65rem;
+.read-article {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  color: #000;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: arial;
   text-decoration: none;
+  box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px,
+    rgb(0 0 0 / 30%) 0 0 60px -15px;
 }
-
-.location-icon,
-.phone-icon,
-.email-icon {
-  padding: 0.65rem 0;
-  color: #93cb52;
+.read-article:hover {
+  background: #d5d5d5;
+  box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px 0px;
 }
-*/
-.copyright {
-  text-align: center;
-  height: 2.5rem;
-  padding-top: 1rem;
+iframe[sandbox] .read-article {
+  display: none;
 }
-
-/* .footer-container {
-  background-color: rgba(37, 37, 37, 0.5);
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-} */
-
-/* .item-contact {
-  background-color: #333;
-  text-align: center;
-  flex: 1;
-} */
