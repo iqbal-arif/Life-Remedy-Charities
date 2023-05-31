@@ -1,18 +1,18 @@
 const slider = document.querySelector('.slider-container'),
   // slides = Array.from(document.querySelectorAll('img'));
-  slides = Array.from(document.querySelectorAll('.slide'));
-
-let isDragging = false,
-  startPos = 0,
-  currentTranslate = 0,
+  slides = Array.from(document.querySelectorAll('picture'));
+console.log(slides);
+// States
+let isDragging = false, //Whether we touch or click on the item, initially set to false
+  startPos = 0, //Wherever we click or finger is on mobile device
+  currentTranslate = 0, //
   prevTranslate = 0,
   animationID = 0,
-  currentIndex = 0;
+  currentIndex = 0; // slides index
 
 slides.forEach((slide, index) => {
-  console.log(slide);
-  //   const slideImage = slide.querySelector('img');
-  //   slideImage.addEventListener('dragstart', (e) => e.preventDefault());
+  console.log(slide, index);
+  const slideImage = slide.querySelector('img');
   slide.addEventListener('dragstart', (e) => e.preventDefault());
 
   //   Touch Events
