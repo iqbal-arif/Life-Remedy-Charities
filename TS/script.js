@@ -12,7 +12,8 @@ let isDragging = false, //Whether we touch or click on the item, initially set t
 
 slides.forEach((slide, index) => {
   console.log(slide, index);
-  const slideImage = slide.querySelector('img');
+  // Prevent Pick and Drag of the image
+  const slideImage = slide.querySelector('source');
   slide.addEventListener('dragstart', (e) => e.preventDefault());
 
   //   Touch Events
