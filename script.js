@@ -18,11 +18,17 @@ scrollContainer.addEventListener('wheel', (evt) => {
   document.getElementById('myBar').style.width = totalWidth + endWidth + '%';
 });
 
-function myFunction(event) {
-  var x = event.touches[0].clientX;
-  var y = event.touches[0].clientY;
-  document.getElementById('main').innerHTML = x + ', ' + y;
-}
+// scrollContainer.addEventListener('ontouchStart', (e) => {
+//   var x = e.touches[0].clientX;
+//   var y = e.touches[0].clientY;
+//   document.querySelectorAll('section').innerHTML = x + ', ' + y;
+// });
+
+// function myFunction(event) {
+//   var x = event.touches[0].clientX;
+//   var y = event.touches[0].clientY;
+//   document.querySelectorAll('section').innerHTML = x + ', ' + y;
+// }
 
 slides.forEach((slide, index) => {
   console.log(slide, index);

@@ -83,6 +83,8 @@ main {
 
   /* align-items: center; */
   justify-items: last baseline;
+  /* scroll-snap-type: x; */
+  -webkit-overflow-scrolling: touch;
 }
 
 h1 {
@@ -97,6 +99,7 @@ section {
   justify-content: center;
   align-items: center;
   font-size: 4ch;
+  scroll-snap-align: start;
 }
 
 section:nth-child(even) {
