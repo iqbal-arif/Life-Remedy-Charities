@@ -14,23 +14,27 @@
   /***************** Custom Properties *****************/
 
   /* Colors */
-  --color-primary: #730039;
-  --color-primary-m-light: hsla(330, 100%, 23%, 0.55);
-  --color-primary-m-dark: hsla(330, 100%, 23%, 0.85);
+  --color-primary: #121211;
+  --color-primary-m-light: hsla(60, 2%, 35%, 0.55);
+  --color-primary-m-dark: hsla(0, 0%, 17%, 0.85);
 
-  --color-secondary: #ffc513;
-  --color-secondary-m-light: hsla(45, 100%, 54%, 0.55);
-  --color-secondary-m-dark: rgba(255, 196, 19, 0.85);
+  --color-secondary: #c60000;
+  --color-secondary-m-light: hsla(0, 64%, 53%, 0.55);
+  --color-secondary-m-dark: hsla(0, 85%, 23%, 0.85);
 
-  --color-tertiary: #ff724c;
-  --color-tertiary-m-light: hsla(13, 100%, 65%, 0.55);
-  --color-tertiary-m-dark: rgba(255, 115, 76, 0.85);
+  --color-tertiary: #f7bb38;
+  --color-tertiary-m-light: hsla(41, 92%, 59%, 0.55);
+  --color-tertiary-m-dark: hsla(41, 92%, 59%, 0.85);
 
-  --color-quaternary: #f6eedf;
-  --color-quaternary-m-light: hsla(39, 56%, 92%, 0.55);
-  --color-quaternary-m-dark: hsla(39, 56%, 92%, 0.85);
+  --color-quaternary: #968d76;
+  --color-quaternary-m-light: hsla(43, 13%, 53%, 0.55);
+  --color-quaternary-m-dark: hsla(43, 13%, 53%, 0.85);
 
-  /* Transtion Duration */
+  --color-quinary: #c9bd9f;
+  --color-quinary-m-light: hsla(43, 28%, 71%, 0.55);
+  --color-quinary-m-dark: hsla(43, 28%, 71%, 0.851);
+  --bg-text-color: #ffffff;
+  /* Transition Duration */
   --transition-duration: 0.3s;
 
   /* Section Title Font Size */
@@ -43,14 +47,15 @@
 html,
 body {
   margin: 0;
-  /* font-family: sans-serif; */
-  font-family: 'Titillium Web', sans-serif;
-
-  background-color: #e2d458;
+  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: 'Josefin Sans', sans-serif;
+  /* font-family: 'Ysabeau', sans-serif; */
+  color: var(--color-primary);
+  background-color: var(--color-primary-m-dark);
   /* Scroll Indicator */
   --scrollbar-height: 5px;
-  --scrollbar-bg: #ddd;
-  --scrollbar-progress-color: #0089f2;
+  --scrollbar-bg: var(--color-primary);
+  --scrollbar-progress-color: var(--color-secondary);
   overflow-x: hidden;
 }
 
@@ -67,7 +72,7 @@ body {
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 8px;
-  background: #04aa6d;
+  background: var(--color-quaternary);
   width: 0%;
 }
 
@@ -109,19 +114,20 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-tertiary-m-dark);
 }
 .navBar a {
-  font-family: 'Open Sans', 'Ubuntu', sans-serif;
-  font-size: 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  /* font-size: 1rem; */
   font-size: calc(0.4rem + 1vw);
   text-transform: uppercase;
   color: white;
 }
 
 .navBar a:hover {
-  border-bottom: 0.15em solid #77c55f;
-  color: #77c55f;
+  border-bottom: 0.15em solid var(--color-tertiary-m-dark);
+  color: var(--color-tertiary-m-dark);
 }
 
 main {
@@ -165,15 +171,16 @@ section {
   /****Scroll snap*****/
 }
 aside {
-  padding-top: 1.5rem;
-  line-height: 5.5rem;
+  /* padding-top: 1.5rem; */
+  padding-left: 2.5rem;
+  line-height: 5rem;
 }
 
 /* section h4 {
   margin-top: 1rem;
 } */
 picture img {
-  margin: 0rem 5rem;
+  margin: 0rem 18rem 0rem 5rem;
   height: 70vh;
   width: 50vh;
   border-radius: 1.5rem;
@@ -187,22 +194,32 @@ button {
   height: 6rem;
   width: 15rem;
   border-radius: 1.25rem;
-  background-color: var(--color-secondary);
+  background-color: var(--color-quaternary);
   border: none;
   cursor: pointer;
 }
+
+button:hover {
+  border: var(--color-tertiary-m-dark) solid 1px;
+  background-color: var(--color-tertiary);
+}
 /***************/
 section:nth-child(even) {
-  background-color: teal;
+  background-image: url('./images/Asphalt_New.jpg');
+  /* background-repeat: no-repeat; */
+  object-fit: fill;
+  /* background-size: contain; */
+
+  /* background-color: teal; */
   color: white;
 }
 /***************/
 
 .copyright {
-  background-color: #e2d458;
+  background-color: var(--color-primary-m-dark);
   display: flex;
   justify-content: center;
-  color: #000;
+  color: var(--bg-text-color);
   padding-top: 0.5rem;
   font-size: calc(0.35rem + 1vw);
 }
