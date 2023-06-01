@@ -81,6 +81,7 @@ main {
   position: relative;
   overflow-x: hidden;
   display: flex;
+  /* flex-direction: row; */
   background-color: #d6d3b4;
   /* Flex box position left to right */
   /* justify-content: end; */
@@ -100,12 +101,26 @@ section {
   min-width: 100vw;
   min-height: 80vh;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 4ch;
+  /* font-size: 4ch; */
   scroll-snap-align: start;
 }
 
+section h4 {
+  margin: 0;
+}
+picture img {
+  height: 70vh;
+}
+
+button {
+  margin-top: 0.5rem;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
 section:nth-child(even) {
   background-color: teal;
   color: white;
