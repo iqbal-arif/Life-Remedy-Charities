@@ -98,7 +98,7 @@ h1 {
 
 section {
   min-width: 100vw;
-  min-height: 85vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,6 +109,15 @@ section {
 section:nth-child(even) {
   background-color: teal;
   color: white;
+}
+
+.copyright {
+  background-color: #e2d458;
+
+  text-align: center;
+  height: 1.5rem;
+  /* padding-top: 1rem; */
+  color: #000;
 }
 
 .read-article {
@@ -138,9 +147,12 @@ iframe[sandbox] .read-article {
   main {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scroll-padding: 0 10px 0 0px;
   }
   section {
     position: relative;
-    scroll-snap-align: start;
+    scroll-snap-align: end;
+    scroll-snap-stop: always;
+    /* scroll-margin: 10px; */
   }
 }
