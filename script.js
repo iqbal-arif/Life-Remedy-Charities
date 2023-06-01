@@ -1,4 +1,6 @@
+/*****************/
 const scrollContainer = document.querySelector('main');
+/*****************/
 console.log(scrollContainer);
 
 const slider = document.querySelector('main'),
@@ -9,7 +11,10 @@ const endWidth = 25;
 scrollContainer.addEventListener('wheel', (evt) => {
   // console.log(evt.target.window);
   console.log((scrollContainer.scrollLeft += evt.deltaY));
+  /*****************/
   evt.preventDefault();
+  // scrollContainer.scrollLeft += evt.deltaY;
+  /*****************/
   let scrolled = (scrollContainer.scrollLeft += evt.deltaY);
   console.log(scrollContainer.scrollLeft);
   const sectionWidth = scrollContainer.scrollWidth;
