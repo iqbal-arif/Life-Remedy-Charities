@@ -113,13 +113,15 @@ section:nth-child(even) {
 
 .copyright {
   background-color: #e2d458;
-
-  text-align: center;
-  height: 1.5rem;
-  /* padding-top: 1rem; */
+  display: flex;
+  justify-content: center;
   color: #000;
+  /* align-items: center; */
+  /* text-align: center; */
+  /* height: 1.5rem; */
+  /* padding-top: 1rem; */
 }
-
+/*
 .read-article {
   position: absolute;
   top: 10px;
@@ -141,7 +143,7 @@ section:nth-child(even) {
 iframe[sandbox] .read-article {
   display: none;
 }
-
+*/
 @media only screen and (min-width: 320px) and (max-width: 480px),
   (orientation: portrait) {
   main {
