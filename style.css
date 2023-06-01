@@ -222,10 +222,10 @@ iframe[sandbox] .read-article {
 }
 */
 /***************/
-/*
+
 @media only screen and (min-width: 320px) and (max-width: 480px),
   (orientation: portrait) {
-    main {
+  main {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-padding: 0 10px 0 0px;
@@ -235,5 +235,5 @@ iframe[sandbox] .read-article {
     scroll-snap-align: end;
     scroll-snap-stop: always;
     /* scroll-margin: 10px; */
-/* } */
-/* } */
+  }
+}
