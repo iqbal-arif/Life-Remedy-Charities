@@ -105,14 +105,20 @@ section {
   justify-content: center;
   align-items: center;
   /* font-size: 4ch; */
-  scroll-snap-align: start;
+  scroll-snap-align: end;
+}
+aside {
+  /* padding-top: 1.5rem; */
+  /* margin: 0rem 0rem; */
+  /* line-height: 1.5rem; */
 }
 
-section h4 {
-  margin: 0;
-}
+/* section h4 {
+  margin-top: 1rem;
+} */
 picture img {
   height: 70vh;
+  border-radius: 1.5rem;
 }
 
 button {
@@ -159,6 +165,7 @@ iframe[sandbox] .read-article {
   display: none;
 }
 */
+/*
 @media only screen and (min-width: 320px) and (max-width: 480px),
   (orientation: portrait) {
   main {
@@ -171,5 +178,5 @@ iframe[sandbox] .read-article {
     scroll-snap-align: end;
     scroll-snap-stop: always;
     /* scroll-margin: 10px; */
-  }
-}
+/* } */
+/* } */
