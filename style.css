@@ -180,7 +180,7 @@ aside {
 .aside-2 {
   background-image: url('./images/Textur_1.jpg'),
     url('./images/octagon-mosiac.png');
-  background-blend-mode: multiply;
+  background-blend-mode: screen;
   object-fit: fill;
 }
 
