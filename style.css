@@ -184,12 +184,17 @@ aside {
 }
 
 .aside-3 {
-  background-image: url('./images/wood.jpg');
+  background-image: url('./images/wood.jpg'), url('./images/mosaic.1.png');
+  background-blend-mode: overlay;
+  opacity: 0.5;
+
   /* background-repeat: no-repeat; */
   object-fit: fill;
 }
 .aside-4 {
-  background-image: url('./images/Wood_OSB.jpg');
+  background-image: url('./images/Wood_OSB.jpg'), url('./images/mosaic.2.png');
+  background-blend-mode: overlay;
+
   /* background-repeat: no-repeat; */
   object-fit: fill;
 }
@@ -199,9 +204,10 @@ aside {
   object-fit: fill;
 }
 
-/* section h4 {
-  margin-top: 1rem;
-} */
+picture {
+  opacity: 1;
+  z-index: 20;
+}
 picture img {
   margin: 0rem 18rem 0rem 5rem;
   height: 70vh;
