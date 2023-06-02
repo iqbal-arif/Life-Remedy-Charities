@@ -178,19 +178,29 @@ aside {
 }
 
 .aside-2 {
-  background-image: url('./images/Textur_1.jpg');
-  /* background-repeat: no-repeat; */
+  background-image: url('./images/Textur_1.jpg'),
+    url('./images/octagon-mosiac.png');
+  background-blend-mode: multiply;
   object-fit: fill;
 }
 
 .aside-3 {
   background-image: url('./images/wood.jpg'), url('./images/mosaic.1.png');
-  background-blend-mode: overlay;
-  opacity: 0.5;
-
-  /* background-repeat: no-repeat; */
+  background-blend-mode: screen;
   object-fit: fill;
 }
+
+.aside-3::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  /* background-color: rgba(0, 0, 0, 0.25); */
+  opacity: 0.5;
+}
+
 .aside-4 {
   background-image: url('./images/Wood_OSB.jpg'), url('./images/mosaic.2.png');
   background-blend-mode: overlay;
@@ -204,10 +214,6 @@ aside {
   object-fit: fill;
 }
 
-picture {
-  opacity: 1;
-  z-index: 20;
-}
 picture img {
   margin: 0rem 18rem 0rem 5rem;
   height: 70vh;
