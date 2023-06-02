@@ -142,17 +142,18 @@ main {
 
 /***************/
 h2 {
+  margin-bottom: 2rem;
   font-size: var(--font-size-title);
-  margin: 0;
-  padding: 0;
 }
 /***************/
 
 h3 {
-  font-size: calc(0.8rem + 1vw);
+  font-size: calc(1rem + 1vw);
+  font-style: italic;
 }
 
 h4 {
+  margin-top: 2rem;
   font-size: calc(0.5rem + 1vw);
 }
 
@@ -172,8 +173,14 @@ section {
 }
 aside {
   /* padding-top: 1.5rem; */
-  padding-left: 2.5rem;
-  line-height: 5rem;
+  padding-left: 3.5rem;
+  line-height: 4.5rem;
+}
+
+.aside-2 {
+  background-image: url('./images/concrete.jpg');
+  /* background-repeat: no-repeat; */
+  object-fit: fill;
 }
 
 /* section h4 {
@@ -188,7 +195,7 @@ picture img {
 }
 
 button {
-  margin-top: 1.5rem;
+  margin-top: 5rem;
   padding: 1.5rem 1rem;
   font-size: 1.75rem;
   height: 6rem;
@@ -203,15 +210,16 @@ button:hover {
   border: var(--color-tertiary-m-dark) solid 1px;
   background-color: var(--color-tertiary);
 }
+
 /***************/
 section:nth-child(even) {
-  background-image: url('./images/Asphalt_New.jpg');
+  /* background-image: url('./images/Asphalt_New.jpg'); */
   /* background-repeat: no-repeat; */
   object-fit: fill;
   /* background-size: contain; */
 
   /* background-color: teal; */
-  color: white;
+  /* color: white; */
 }
 /***************/
 
