@@ -188,6 +188,16 @@ aside {
   /* background-repeat: no-repeat; */
   object-fit: fill;
 }
+.aside-4 {
+  background-image: url('./images/Wood_OSB.jpg');
+  /* background-repeat: no-repeat; */
+  object-fit: fill;
+}
+.aside-5 {
+  background-image: url('./images/red.pat.jpg');
+  /* background-repeat: no-repeat; */
+  object-fit: fill;
+}
 
 /* section h4 {
   margin-top: 1rem;
