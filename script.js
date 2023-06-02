@@ -7,7 +7,7 @@ const slider = document.querySelector('main'),
   slides = Array.from(document.querySelectorAll('section'));
 console.log(slides);
 
-const endWidth = 25;
+const endWidth = 15;
 scrollContainer.addEventListener('wheel', (evt) => {
   // console.log(evt.target.window);
   console.log((scrollContainer.scrollLeft += evt.deltaY));
