@@ -183,6 +183,12 @@ aside {
   object-fit: fill;
 }
 
+.aside-3 {
+  background-image: url('./images/wood.jpg');
+  /* background-repeat: no-repeat; */
+  object-fit: fill;
+}
+
 /* section h4 {
   margin-top: 1rem;
 } */
