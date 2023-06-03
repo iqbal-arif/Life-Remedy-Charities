@@ -176,6 +176,24 @@ aside {
   padding-left: 3.5rem;
   line-height: 4.5rem;
 }
+/* .aside-1::before {
+  content: url('./images/window.mosaic.jpg');
+  background-size: contain;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 1);
+  opacity: 0.5;
+} */
+.aside-1 {
+  background-image: url('./images/Textur_1.jpg');
+  /* background-repeat: no-repeat; */
+  background-blend-mode: overlay;
+  object-fit: fill;
+}
 
 .aside-2 {
   background-image: url('./images/Textur_1.jpg'),
