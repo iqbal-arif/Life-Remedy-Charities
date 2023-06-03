@@ -189,7 +189,8 @@ aside {
   opacity: 0.5;
 } */
 .aside-1 {
-  background-image: url('./images/Textur_1.jpg');
+  background-image: url('./images/Textur_1.jpg'),
+    url('./images/window.mosaic.jpg');
   /* background-repeat: no-repeat; */
   background-blend-mode: overlay;
   object-fit: fill;
