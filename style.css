@@ -177,6 +177,12 @@ aside {
   padding-left: 3.5rem;
   line-height: 4.5rem;
 }
+
+picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* .aside-1::before {
   content: url('./images/window.mosaic.jpg');
   background-size: contain;
