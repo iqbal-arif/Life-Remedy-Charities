@@ -330,10 +330,21 @@ iframe[sandbox] .read-article {
   aside {
     line-height: 2.75rem;
     padding-left: 0.5rem;
+    margin-bottom: 15rem;
   }
-
+  h2 {
+    margin-bottom: 2.5rem;
+  }
+  h3 {
+    margin-bottom: 1rem;
+  }
   h4 {
+    margin-top: 1rem;
     padding: 0 1rem;
+  }
+  button {
+    margin-top: 1rem;
+    margin-left: 1rem;
   }
   picture {
     /* margin: 0rem 18rem 0rem 5rem; */
@@ -342,7 +353,7 @@ iframe[sandbox] .read-article {
     align-items: center;
     height: 30vh;
     width: 30vh;
-
+    margin-top: 3.5rem;
     /* border-radius: 1.5rem; */
     /* object-fit: cover; */
   }
