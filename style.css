@@ -338,4 +338,25 @@ iframe[sandbox] .read-article {
   aside {
     line-height: 2.75rem;
   }
+
+  picture {
+    /* margin: 0rem 18rem 0rem 5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 50vh;
+    width: 50vh; */
+    /* border-radius: 1.5rem; */
+    /* object-fit: cover; */
+  }
+  img {
+    /* margin: 0rem 18rem 0rem 5rem; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 20vh;
+    width: 20vh;
+    border-radius: 1.5rem;
+    object-fit: cover;
+  /* } */
 }
