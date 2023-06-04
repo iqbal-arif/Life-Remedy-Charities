@@ -142,19 +142,20 @@ main {
 
 /***************/
 h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 4.5rem;
   font-size: var(--font-size-title);
 }
 /***************/
 
 h3 {
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1rem + 1.8vw);
   font-style: italic;
+  /* margin-bottom: 2rem; */
 }
 
 h4 {
   margin-top: 2rem;
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(0.5rem + 2vw);
 }
 
 section {
@@ -189,9 +190,9 @@ aside {
   opacity: 0.5;
 } */
 .aside-1 {
-  background-image: url('./images/Textur_1.jpg'), url('./images/circle.pat.png');
+  background-image: url('./images/Textur_1.jpg');
   /* background-repeat: no-repeat; */
-  background-blend-mode: screen;
+  background-blend-mode: color-burn;
   object-fit: fill;
 }
 
@@ -315,5 +316,24 @@ iframe[sandbox] .read-article {
     scroll-snap-align: end;
     scroll-snap-stop: always;
     /* scroll-margin: 10px; */
+  }
+
+  section {
+    /***************/
+    min-width: 100vw;
+    /* width: 100vw; */
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 4ch; */
+    /***************/
+    /****Scroll snap*****/
+    /* scroll-snap-align: center; */
+    /****Scroll snap*****/
+  }
+  aside {
+    line-height: 2.75rem;
   }
 }
