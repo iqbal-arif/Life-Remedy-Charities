@@ -39,15 +39,15 @@ slides.forEach((slide, index) => {
   console.log(slide, index);
 
   // Touch Events
-  slide.addEventListener('touchstart', touchStart(index));
-  slide.addEventListener('touchend', touchEnd);
-  slide.addEventListener('touchmove', touchMove);
+  // slide.addEventListener('touchstart', touchStart(index));
+  // slide.addEventListener('touchend', touchEnd);
+  // slide.addEventListener('touchmove', touchMove);
 
-  Mouse.events;
-  slide.addEventListener('mousedown', touchStart(index));
-  slide.addEventListener('mouseup', touchEnd);
-  slide.addEventListener('mouseleave', touchEnd);
-  slide.addEventListener('mousemove', touchMove);
+  // Mouse.events;
+  // slide.addEventListener('mousedown', touchStart(index));
+  // slide.addEventListener('mouseup', touchEnd);
+  // slide.addEventListener('mouseleave', touchEnd);
+  // slide.addEventListener('mousemove', touchMove);
 });
 
 /***********W3****************************************** 
