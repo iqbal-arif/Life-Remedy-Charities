@@ -100,7 +100,7 @@ header {
 
 .navBar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   /* margin-top: 12px; */
   margin-right: 20px;
   gap: 12px;
@@ -178,18 +178,6 @@ aside {
   line-height: 4.5rem;
 }
 
-/* .aside-1::before {
-  content: url('./images/window.mosaic.jpg');
-  background-size: contain;
-
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(0, 0, 0, 1);
-  opacity: 0.5;
-} */
 .aside-1 {
   background-image: url('./images/Textur_1.jpg');
   /* background-repeat: no-repeat; */
@@ -210,17 +198,6 @@ aside {
   object-fit: fill;
 }
 
-.aside-3::before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  /* background-color: rgba(0, 0, 0, 0.25); */
-  opacity: 0.5;
-}
-
 .aside-4 {
   background-image: url('./images/Wood_OSB.jpg'), url('./images/mosaic.2.png');
   background-blend-mode: overlay;
@@ -234,13 +211,25 @@ aside {
   object-fit: fill;
 }
 
-picture img {
-  margin: 0rem 18rem 0rem 5rem;
+/* .pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.pic-container img {
+  margin: 0rem 16rem 0rem 4rem;
   height: 70vh;
   width: 50vh;
   border-radius: 1.5rem;
   object-fit: cover;
 }
+/* picture img {
+  margin: 0rem 18rem 0rem 5rem;
+  height: 70vh;
+  width: 50vh;
+  border-radius: 1.5rem;
+  object-fit: cover;
+} */
 
 button {
   margin-top: 5rem;
@@ -305,13 +294,15 @@ iframe[sandbox] .read-article {
 */
 /***************/
 
-@media only screen and (min-width: 280px),
-  (max-width: 414px),
+@media only screen and (min-width: 280px) and (max-width: 414px),
   (orientation: portrait) {
   main {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-padding: 0 10px 0 0px;
+  }
+  .progress-container {
+    display: none;
   }
   section {
     position: relative;
@@ -347,15 +338,23 @@ iframe[sandbox] .read-article {
     margin-left: 1rem;
   }
   picture {
+    /* min-width: 100vw; */
     /* margin: 0rem 18rem 0rem 5rem; */
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    /* height: 30vh;
     width: 30vh;
-    margin-top: 3.5rem; */
+    margin-top: 3.5rem;  */
     /* border-radius: 1.5rem; */
     /* object-fit: cover; */
+  }
+  picture img {
+    margin: 0rem 18rem 0rem 5rem;
+    height: 70vh;
+    width: 50vh;
+    border-radius: 2.5rem;
+    object-fit: cover;
   }
   img {
     /* margin: 0rem 18rem 0rem 5rem; */
@@ -364,7 +363,7 @@ iframe[sandbox] .read-article {
     align-items: center; */
     /* height: 20vh;
     width: 20vh; */
-    border-radius: 1.5rem;
-    object-fit: cover;
+    /* border-radius: 1.5rem; */
+    /* object-fit: cover; */
   }
 }
