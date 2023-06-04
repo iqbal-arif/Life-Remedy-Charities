@@ -164,13 +164,14 @@ section {
   /* width: 100vw; */
   min-height: 85vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   /* font-size: 4ch; */
   /***************/
   /****Scroll snap*****/
   scroll-snap-align: center;
   /****Scroll snap*****/
+  padding-top: 5rem;
 }
 aside {
   /* padding-top: 1.5rem; */
@@ -178,11 +179,6 @@ aside {
   line-height: 4.5rem;
 }
 
-picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 /* .aside-1::before {
   content: url('./images/window.mosaic.jpg');
   background-size: contain;
