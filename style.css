@@ -38,7 +38,7 @@
   --transition-duration: 0.3s;
 
   /* Section Title Font Size */
-  --font-size-title: calc(2rem + 2vw);
+  --font-size-title: calc(2.2rem + 2vw);
 
   /* Section Padding */
   --padding-section: 8vh 3vw;
@@ -148,14 +148,14 @@ h2 {
 /***************/
 
 h3 {
-  font-size: calc(1rem + 1.8vw);
+  font-size: calc(1.25rem + 1.8vw);
   font-style: italic;
   margin-bottom: 2rem;
 }
 
 h4 {
   margin-top: 2rem;
-  font-size: calc(0.5rem + 2vw);
+  font-size: calc(0.85rem + 2vw);
 }
 
 section {
