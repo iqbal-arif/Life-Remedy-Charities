@@ -138,6 +138,7 @@ main {
   position: relative;
   background-color: #d6d3b4;
   -webkit-overflow-scrolling: touch;
+  max-height: 100vh;
 }
 
 /***************/
@@ -160,11 +161,12 @@ h4 {
 
 section {
   /***************/
-  min-height: 85vh;
+  /* max-height: 100vh; */
+  min-height: 75vh;
   min-width: 105vw;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   /* font-size: 4ch; */
   /***************/
   /****Scroll snap*****/
@@ -173,9 +175,12 @@ section {
   padding-left: 2rem;
 }
 aside {
+  height: 100vh;
   /* padding-top: 1.5rem; */
-  padding-left: 3.5rem;
+  padding-left: 2.5rem;
   line-height: 4.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .aside-1 {
@@ -248,18 +253,6 @@ button:hover {
   background-color: var(--color-tertiary);
 }
 
-/***************/
-section:nth-child(even) {
-  /* background-image: url('./images/Asphalt_New.jpg'); */
-  /* background-repeat: no-repeat; */
-  object-fit: fill;
-  /* background-size: contain; */
-
-  /* background-color: teal; */
-  /* color: white; */
-}
-/***************/
-
 .copyright {
   background-color: var(--color-primary-m-dark);
   display: flex;
@@ -294,8 +287,7 @@ iframe[sandbox] .read-article {
 */
 /***************/
 
-@media only screen and (min-width: 280px) and (max-width: 414px),
-  (orientation: portrait) {
+@media only screen and (max-width: 280px) {
   main {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
