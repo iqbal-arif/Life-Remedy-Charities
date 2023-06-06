@@ -265,9 +265,9 @@ h4 {
 .pic-container img {
   background-color: brown;
   /* max-height: 25%; */
-  /* margin: 0rem 4rem 0rem 4rem; */
-  height: 100%;
-  width: 100%;
+  margin: 0rem 4rem 0rem 4rem;
+  height: 90%;
+  width: 80%;
   border-radius: 1.5rem;
   /* object-fit: cover; */
 }
