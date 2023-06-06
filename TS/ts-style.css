@@ -311,8 +311,10 @@ iframe[sandbox] .read-article {
 }
 */
 /***************/
-
-@media only screen and (max-width: 280px) {
+/* @media only screen and (min-width: 481px) and (max-width: 768px) { */
+/* @media only screen and (min-width: 769px) and (max-width: 1024px) { */
+/* @media only screen and (min-width: 1024px) and (max-width: 1366px) { */
+@media only screen and (min-width: 280px) and (max-width: 480px) {
   main {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -389,15 +391,12 @@ iframe[sandbox] .read-article {
     align-items: center;
   }
   .pic-container {
-    /* background-color: aquamarine; */
-    /* display: flex; */
-    /* justify-content: center; */
     align-items: center;
   }
-  picture img {
-    margin: 0rem 18rem 0rem 5rem;
-    height: 50vh;
-    width: 20vh;
+  .pic-container img {
+    /* margin: 0rem 18rem 0rem 5rem; */
+    height: 90%;
+    width: 90%;
     border-radius: 2.5rem;
     object-fit: cover;
   }
