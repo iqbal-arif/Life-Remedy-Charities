@@ -188,11 +188,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
-  width: 90%;
+  height: 100vh;
+  width: 100%;
 }
 aside {
-  /* padding-top: 1.5rem; */
+  padding-top: 25rem;
   /* padding-left: 2.5rem; */
   /* line-height: 4.5rem; */
   display: flex;
@@ -203,12 +203,31 @@ aside {
 
 .section-1 {
   width: calc(25rem + 2vw);
-  height: calc(25rem + 2vh);
+  height: calc(1rem + 2vh);
   background-image: url('../images/Textur_1.jpg');
   /* background-repeat: no-repeat; */
   background-blend-mode: screen;
   object-fit: fill;
   background-color: rgb(253, 181, 88);
+}
+
+h2 {
+  /* margin: calc(0.05rem + 0.5vw) 0; */
+  /* margin-bottom: 1rem; */
+  font-size: calc(1.55rem + 1.8vw);
+}
+/***************/
+
+h3 {
+  font-size: calc(0.85rem + 1.8vw);
+  font-style: italic;
+  /* margin: calc(0.05rem + 1.8vw) 0; */
+}
+
+h4 {
+  margin-top: 1rem;
+  font-size: calc(0.5rem + 1vw);
+  line-height: calc(1.5rem + 0.5vw);
 }
 
 .section-2 {
@@ -239,7 +258,6 @@ aside {
 
 .pic-container {
   background-color: aquamarine;
-
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -318,28 +336,48 @@ iframe[sandbox] .read-article {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-padding: 0 10px 0 0px;
+    height: 100vh;
   }
   .progress-container {
     display: none;
   }
+
   section {
-    position: relative;
-    scroll-snap-align: end;
+    /* position: relative; */
+    /* scroll-snap-align: start; */
     scroll-snap-stop: always;
-    min-height: 85vh;
+    min-height: 100vh;
     min-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
+    /* padding-left: 0.2rem; */
+    /* padding-right: 0.2rem; */
+  }
+  .sec-container {
+    background-color: darkolivegreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
+    height: 85vh;
+    width: 90%;
   }
 
+  .section-1 {
+    width: calc(10rem + 2vw);
+    height: calc(10rem + 2vh);
+    background-color: rgb(253, 181, 88);
+  }
   aside {
-    line-height: 2.75rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    /* line-height: 2.75rem;
     padding-left: 0.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem; */
   }
   h2 {
     margin-bottom: 2.5rem;
