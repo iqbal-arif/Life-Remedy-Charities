@@ -359,6 +359,7 @@ iframe[sandbox] .read-article {
     align-items: center;
   }
   h2 {
+    /* margin-top: 0; */
     text-align: center;
     margin-bottom: 0.5rem;
   }
@@ -383,13 +384,23 @@ iframe[sandbox] .read-article {
     justify-content: center;
     align-items: center;
   }
-
+  .pic-container {
+    /* background-color: aquamarine; */
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+  }
   picture img {
     margin: 0rem 18rem 0rem 5rem;
     height: 50vh;
-    width: 30vh;
+    width: 20vh;
     border-radius: 2.5rem;
     object-fit: cover;
+  }
+  .copyright {
+    color: #d6d3b4;
+    padding-bottom: 0.5rem;
+    font-size: calc(0.4rem + 1vw);
   }
 }
 
