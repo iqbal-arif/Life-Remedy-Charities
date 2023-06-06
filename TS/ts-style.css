@@ -188,16 +188,16 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
+  height: 80vh;
+  width: 900%;
 }
 aside {
-  padding-top: 25rem;
+  padding-top: 5rem;
   /* padding-left: 2.5rem; */
   /* line-height: 4.5rem; */
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 50%;
   background-color: #f7f438;
 }
 
@@ -208,12 +208,12 @@ aside {
   /* background-repeat: no-repeat; */
   background-blend-mode: screen;
   object-fit: fill;
-  background-color: rgb(253, 181, 88);
+  background-color: #fdb558;
 }
 
 h2 {
-  /* margin: calc(0.05rem + 0.5vw) 0; */
-  /* margin-bottom: 1rem; */
+  margin: calc(0.05rem + 0.5vw) 0;
+  margin-bottom: 1rem;
   font-size: calc(1.55rem + 1.8vw);
 }
 /***************/
@@ -284,9 +284,9 @@ button {
   /* padding: 1rem 0.75rem; */
   padding: calc(0.5rem + 0.5vw) calc(0.5rem + 0.5vw);
   font-size: calc(1.2rem + 0.5vw);
-  height: calc(4rem + 1vw);
-  width: calc(12rem + 1vw);
-  border-radius: 1.25rem;
+  height: calc(3rem + 1vw);
+  width: calc(11rem + 1vw);
+  border-radius: 1.75rem;
   background-color: var(--color-quaternary);
   border: none;
   cursor: pointer;
@@ -362,7 +362,7 @@ iframe[sandbox] .read-article {
     justify-content: center;
     align-items: center;
     height: 85vh;
-    width: 90%;
+    width: 100%;
   }
 
   .section-1 {
@@ -370,28 +370,38 @@ iframe[sandbox] .read-article {
     height: calc(10rem + 2vh);
     background-color: rgb(253, 181, 88);
   }
+
   aside {
+    padding-top: 18rem;
     display: flex;
     flex-direction: column;
     width: 100%;
-
-    /* line-height: 2.75rem;
-    padding-left: 0.5rem;
-    margin-bottom: 3rem; */
+    align-items: center;
   }
   h2 {
-    margin-bottom: 2.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
   }
   h3 {
+    text-align: center;
     margin-bottom: 1rem;
   }
   h4 {
-    margin-top: 1rem;
+    margin-top: 0.1rem;
     padding: 0 1rem;
   }
+
   button {
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin: 1rem 0;
+    /* padding: calc(0.2rem + 0.5vw) calc(0.2rem + 0.5vw); */
+    font-size: calc(1rem + 0.5vw);
+    height: calc(2rem + 1vw);
+    width: calc(10rem + 1vw);
+    /* border-radius: 1rem; */
+    /* margin-left: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   picture {
     /* min-width: 100vw; */
@@ -407,8 +417,8 @@ iframe[sandbox] .read-article {
   }
   picture img {
     margin: 0rem 18rem 0rem 5rem;
-    height: 70vh;
-    width: 50vh;
+    height: 50vh;
+    width: 30vh;
     border-radius: 2.5rem;
     object-fit: cover;
   }
