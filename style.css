@@ -359,3 +359,22 @@ iframe[sandbox] .read-article {
     /* object-fit: cover; */
   }
 }
+
+/* .slider-container {
+  background-image: linear-gradient(
+    rgb(62, 62, 62) 10%,
+    rgb(112, 112, 112) 32%,
+    rgb(137, 137, 137) 52%,
+    rgb(112, 112, 112) 73%,
+    rgb(62, 62, 62) 96%
+  );
+  height: 70vh;
+  display: inline-flex;
+  overflow: hidden;
+  /* scrollbar-width: none; */
+/* transform: translateX(0); */
+/* will-change: transform; */
+/* transition: transform 0.3s ease-out;
+  cursor: grab; */
+
+/* } */
