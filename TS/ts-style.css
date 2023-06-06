@@ -192,12 +192,12 @@ section {
   width: 900%;
 }
 aside {
-  padding-top: 5rem;
+  /* padding-top: 1rem; */
   /* padding-left: 2.5rem; */
   /* line-height: 4.5rem; */
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 75%;
   background-color: #f7f438;
 }
 
@@ -271,13 +271,6 @@ h4 {
   border-radius: 1.5rem;
   /* object-fit: cover; */
 }
-/* picture img {
-  margin: 0rem 18rem 0rem 5rem;
-  height: 70vh;
-  width: 50vh;
-  border-radius: 1.5rem;
-  object-fit: cover;
-} */
 
 button {
   margin-top: 2.5rem;
