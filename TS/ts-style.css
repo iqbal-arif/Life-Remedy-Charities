@@ -81,6 +81,8 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -281,6 +283,8 @@ button:hover {
   color: var(--color-primary);
   padding-top: 0.5rem;
   font-size: calc(0.35rem + 1vw);
+  position: sticky;
+  bottom: 0;
 }
 /***************/
 /*
