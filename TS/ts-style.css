@@ -167,7 +167,7 @@ section {
   /* font-size: 4ch; */
   /***************/
   /****Scroll snap*****/
-  scroll-snap-align: end;
+  scroll-snap-align: center;
   /****Scroll snap*****/
   /* padding-left: 2rem; */
 }
@@ -178,22 +178,26 @@ section {
   justify-content: center;
   align-items: center;
   height: 80vh;
-  min-width: 90%;
+  width: 90%;
 }
 aside {
   /* padding-top: 1rem; */
   /* padding-left: 2.5rem; */
   /* line-height: 4.5rem; */
-  padding: 0 calc(1rem + 1vw);
+  /* padding: 0 calc(1rem + 1vw); */
+  padding: clamp(0.5rem, 50vw, 1rem) clamp(1rem, 50vw, 2rem);
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 65%;
+  height: 100%;
   background-color: #f7f438;
 }
 
-.section-1 {
-  width: calc(25rem + 2vw);
-  height: calc(1rem + 2vh);
+.section-10 {
+  /* width: calc(25rem + 2vw); */
+  /* height: calc(1rem + 2vh); */
+  /* height: 50%;
+  width: 50%; */
   background-image: url('../images/Textur_1.jpg');
   /* background-repeat: no-repeat; */
   background-blend-mode: screen;
@@ -203,9 +207,11 @@ aside {
 /*****************/
 /***************/
 h2 {
-  margin: calc(0.05rem + 0.5vw) 0;
+  /* margin: calc(0.05rem + 0.5vw) 0; */
+  font-size: clamp(1rem, 5vw, 3rem);
+  margin: clamp(0.025rem, 25vw, 0.5rem) 0;
   /* margin-bottom: 1rem; */
-  font-size: calc(1.55rem + 1.8vw);
+  /* font-size: calc(1.55rem + 1.8vw); */
 }
 /***************/
 
@@ -258,7 +264,7 @@ h4 {
 .pic-container img {
   background-color: brown;
   /* max-height: 25%; */
-  margin: 0rem 1rem 0rem 1rem;
+  /* margin: 0rem 1rem 0rem 1rem; */
   height: 70%;
   width: 70%;
   border-radius: 1.5rem;
