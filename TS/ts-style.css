@@ -27,6 +27,7 @@
     var(--max-fs-rem)
   );
 
+  line-height: ;
   /* font-size: 62.5%; */
 
   /***************** Custom Properties *****************/
@@ -197,6 +198,7 @@ section {
   align-items: center;
   height: 80vh;
   width: 90%;
+  gap: 3.5%;
 }
 aside {
   /* padding-top: 1rem; */
@@ -206,7 +208,7 @@ aside {
   padding: clamp(0.5rem, 50vw, 1rem) clamp(1rem, 50vw, 2rem);
   display: flex;
   flex-direction: column;
-  width: 65%;
+  width: 50%;
   height: 100%;
   background-color: #f7f438;
 }
